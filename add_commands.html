@@ -99,19 +99,16 @@
         <img src="resources\images\cdn\install_discordus.gif" alt="Installing Video">
         <p>If you haven't already installed Discordus, use this command in your terminal to download the python module.</p>
 
-        <h2>Step 2: Initializing Discordus</h2>
-        <p>from discordus import *</p>
+        <h2>Step 2: Define your command</h2>
         <img src="resources\images\cdn\init_discordus.png" alt="Initializing Discordus">
         <p>Make sure when you're Initializing the module that you always do it like this.</p>
 
         <h2>Step 3: Presetting Your Bot</h2>
-        <p>preset_bot(server_id, token)</p>
         <img src="resources\images\cdn\presets_picture.png" alt="Presets Picture">
         <img src="resources\images\cdn\debug_info.png" alt="Debugging Info">
         <p>It's recommended to use this function to see if your information is being stored correctly.</p>
 
         <h2>Step 4: Run Your Bot!</h2>
-        <p>run_client()</p>
         <img src="resources\images\cdn\run_client.png" alt="Run Client">
         <p>Finally, run your bot and see if it logs in.</p>
         
@@ -123,9 +120,9 @@
         const container = document.getElementById("container");
         const badrequest = document.getElementById("badrequest");
 
-        if (window.location.href == "https://discordusdocs.github.io/setup_bot.html?docs=link") {
+        if (window.location.href == "https://discordusdocs.github.io/add_commands.html?docs=link") {
             container.style.display = "block";
-            document.title = "Presetting Your Bot";
+            document.title = "Adding Commands";
         } else {
             badrequest.style.display = "block";
             document.title = "Oops! Something went wrong.";
