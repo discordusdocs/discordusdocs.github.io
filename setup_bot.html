@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #2e3b4e;
+            color: #ffffff;
+        }
+
+        /* Styling for both containers */
+        #badrequest, #container {
+            text-align: center;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Adding styling for the images */
+        img {
+            max-width: 100%;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling specific for 'badrequest' */
+        #badrequest {
+            display: none;
+            background: #c0392b;
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling specific for 'container' */
+        #container {
+            display: none;
+            background: #34495e;
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Button styles for future functionality */
+        button {
+            background: #16a085;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bad Request Section -->
+    <div id="badrequest">
+        <h1>Oops! Something went wrong.</h1>
+        <p>Unfortunately, we couldn't find the page you're looking for. Please check the link and try again.</p>
+        <button onclick="window.location.href = 'https://discordusdocs.github.io'">Return Home</button>
+    </div>
+
+    <!-- Container Section -->
+    <div id="container">
+        <h1>Setting Up Your Bot</h1>
+        <p>
+            Here is the instructional guide to setup your bot in Discordus.
+        </p>
+
+        <!-- Placeholder for Images -->
+        <h2>Step 1: Install Discordus</h2>
+        <img src="resources\images\cdn\install_discordus.gif" alt="Installing Video">
+        <p>If you haven't already installed Discordus, use this command in your terminal to download the python module.</p>
+
+        <h2>Step 2: Initializing Discordus</h2>
+        <img src="resources\images\cdn\init_discordus.png" alt="Initializing Discordus">
+        <p>Make sure when you're Initializing the module that you always do it like this.</p>
+
+        <h2>Step 3: hold</h2>
+        <img src="placeholder-image3.jpg" alt="Step 3: Placeholder Image">
+        <p>Step 3 instructions go here. Summarize the setup and let the user know they're done.</p>
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+        const badrequest = document.getElementById("badrequest");
+
+        if (window.location.href == "https://discordusdocs.github.io/setup_bot.html?docs=link") {
+            container.style.display = "block";
+            document.title = "Presetting Your Bot";
+        } else {
+            badrequest.style.display = "block";
+            document.title = "Oops! Something went wrong.";
+        }
+    </script>
+</body>
+</html>
