@@ -102,12 +102,14 @@
 
         <h2>Step 2: Define Your Command Response</h2>
         <p>async def my_command(interaction,_):
-            print("Command Triggered!")
-            send_message(interaction, "Hello")</p>
+            <div>   print("Command Triggered!")</div>
+            <div>   send_message(interaction, "Hello")</div>
+        </p>
         <img src="resources\images\cdn\command_eg.png" alt="Define Command">
         <p>To define your command use async functions. Since you're using the basic command documentation we will mainly focus on how to add commands without options.</p>
 
         <h2>Step 3: Add The Command</h2>
+        <p>add_command("greet", "Greets You!", my_command)</p>
         <img src="resources\images\cdn\command_set.png" alt="Presets Picture">
         <p>Now you will use the add_command() function with the paramaters of name, description, response, and more.</p>
 
