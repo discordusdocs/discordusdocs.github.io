@@ -96,23 +96,26 @@
 
         <!-- Placeholder for Images -->
         <h2>Step 1: Install Discordus</h2>
+        <p>pip install discordus</p>
         <img src="resources\images\cdn\install_discordus.gif" alt="Installing Video">
         <p>If you haven't already installed Discordus, use this command in your terminal to download the python module.</p>
 
-        <h2>Step 2: Define your command</h2>
-        <img src="resources\images\cdn\init_discordus.png" alt="Initializing Discordus">
-        <p>Make sure when you're Initializing the module that you always do it like this.</p>
+        <h2>Step 2: Define Your Command Response</h2>
+        <p>async def my_command(interaction,_):
+            print("Command Triggered!")
+            send_message(interaction, "Hello")</p>
+        <img src="resources\images\cdn\command_eg.png" alt="Define Command">
+        <p>To define your command use async functions. Since you're using the basic command documentation we will mainly focus on how to add commands without options.</p>
 
-        <h2>Step 3: Presetting Your Bot</h2>
-        <img src="resources\images\cdn\presets_picture.png" alt="Presets Picture">
-        <img src="resources\images\cdn\debug_info.png" alt="Debugging Info">
-        <p>It's recommended to use this function to see if your information is being stored correctly.</p>
+        <h2>Step 3: Add The Command</h2>
+        <img src="resources\images\cdn\command_set.png" alt="Presets Picture">
+        <p>Now you will use the add_command() function with the paramaters of name, description, response, and more.</p>
 
         <h2>Step 4: Run Your Bot!</h2>
         <img src="resources\images\cdn\run_client.png" alt="Run Client">
         <p>Finally, run your bot and see if it logs in.</p>
         
-        <h2>Great! You finished setting up your bot.</h2>
+        <h2>Great! You finished adding commands to your bot.</h2>
         <a href="index.html"><button>Back to main page</button></a>
     </div>
 
